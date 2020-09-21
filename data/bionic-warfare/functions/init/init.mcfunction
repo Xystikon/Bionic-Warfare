@@ -1,0 +1,1 @@
+function bionic-warfare:init/init_scoreboards
