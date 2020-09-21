@@ -12,6 +12,9 @@ tag @a remove hasReactor
 # clear everyone
 clear @a
 
+# give book
+execute as @a run function bionic-warfare:items/give_book
+
 # reset start trigger
 scoreboard players set @s start 0
 scoreboard players enable @s start
