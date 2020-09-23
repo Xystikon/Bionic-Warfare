@@ -18,8 +18,11 @@ execute as @a[tag=hasReactor] run scoreboard players add @s timeWithReactor 1
 execute as @a[tag=!hasReactor] run replaceitem entity @s armor.chest iron_chestplate 1
 
 # display to everyone who has the reactor.
-execute if entity @a[tag=hasReactor] run title @a actionbar [{"selector":"@a[nbt={Inventory:[{id:\"minecraft:diamond_chestplate\",Slot:102b,tag:{arcReactor:1}}]}]","color":"yellow"},{"text":" has the Arc Reactor"}]
-execute unless entity @a[tag=hasReactor] run title @a actionbar [{"text":"No one has the Arc Reactor"}]
+execute if entity @a[tag=hasReactor] run bossbar set bw:has-reactor name [{"selector": "@a[nbt={Inventory:[{id:\"minecraft:diamond_chestplate\",Slot:102b,tag:{arcReactor:1}}]}]"}, {"text":" has the reactor."}]
+execute unless entity @a[tag=hasReactor] run bossbar set bw:has-reactor name {"text":"No one has the reactor."}
+
+#execute if entity @a[tag=hasReactor] run title @a actionbar [{"selector":"@a[nbt={Inventory:[{id:\"minecraft:diamond_chestplate\",Slot:102b,tag:{arcReactor:1}}]}]","color":"yellow"},{"text":" has the Arc Reactor"}]
+#execute unless entity @a[tag=hasReactor] run title @a actionbar [{"text":"No one has the Arc Reactor"}]
 
 # give glowing effect to whoever has the reactor
 execute as @a if entity @s[tag=hasReactor] run effect give @s glowing 1 1 true

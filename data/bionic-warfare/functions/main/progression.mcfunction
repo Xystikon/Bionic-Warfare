@@ -8,6 +8,7 @@ function bionic-warfare:main/reactor/item
 function bionic-warfare:main/engine/timings
 
 # upgrade blocks
+function bionic-warfare:items/prevent-from-placing
 
 # upgrade effects
 
