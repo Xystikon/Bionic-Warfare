@@ -6,9 +6,10 @@ function bionic-warfare:main/reactor/item
 
 # engine room
 function bionic-warfare:main/engine/timings
+function bionic-warfare:main/room/loop
 
 # upgrade blocks
-function bionic-warfare:items/prevent-from-placing
+function bionic-warfare:items/loop
 
 # upgrade effects
 

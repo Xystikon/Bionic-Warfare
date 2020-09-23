@@ -16,6 +16,7 @@ clear @a
 kill @e[tag=room_marker]
 kill @e[tag=room_placeholder]
 kill @e[tag=player_placeholder]
+kill @e[tag=player_body]
 
 # give book
 execute as @a run function bionic-warfare:items/give_book
