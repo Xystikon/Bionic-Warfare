@@ -5,6 +5,7 @@ scoreboard players add gameTime info 1
 function bionic-warfare:main/reactor/item
 
 # engine room
+function bionic-warfare:main/engine/timings
 
 # upgrade blocks
 

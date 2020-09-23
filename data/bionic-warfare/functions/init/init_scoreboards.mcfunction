@@ -1,6 +1,12 @@
 scoreboard objectives add timeWithReactor dummy
 scoreboard players set @a timeWithReactor 0
 
+scoreboard objectives add engineCooldown dummy
+scoreboard players set @a engineCooldown 0
+
+scoreboard objectives add timeInEngine dummy
+scoreboard players set @a timeInEngine 0
+
 scoreboard objectives add inDimension dummy
 scoreboard players set @a inDimension 0
 

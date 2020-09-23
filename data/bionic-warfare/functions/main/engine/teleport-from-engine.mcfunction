@@ -11,3 +11,5 @@ execute if entity @s[tag=player3] run kill @e[tag=player3_placeholder]
 execute if entity @s[tag=player4] run kill @e[tag=player4_placeholder]
 execute if entity @s[tag=player5] run kill @e[tag=player5_placeholder]
 execute if entity @s[tag=player6] run kill @e[tag=player6_placeholder]
+
+scoreboard players set @s timeInEngine 0

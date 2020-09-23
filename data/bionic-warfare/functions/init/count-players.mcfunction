@@ -1,3 +1,12 @@
+tag @a remove player1
+tag @a remove player2
+tag @a remove player3
+tag @a remove player4
+tag @a remove player5
+tag @a remove player6
+
+tag @a remove counted
+
 execute as @r[tag=!counted] run tag @s add player1
 execute as @a[tag=player1] run tag @s add counted
 execute as @a[tag=player1] run scoreboard players add playerCount info 1
