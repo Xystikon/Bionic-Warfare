@@ -30,4 +30,6 @@ execute if entity @s[tag=player4] run kill @e[tag=player4_body]
 execute if entity @s[tag=player5] run kill @e[tag=player5_body]
 execute if entity @s[tag=player6] run kill @e[tag=player6_body]
 
+forceload remove ~ ~
+
 scoreboard players set @s timeInEngine 0

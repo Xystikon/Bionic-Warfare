@@ -28,6 +28,7 @@ execute if entity @s[tag=player6] run tp @e[tag=player6_placeholder] @a[tag=play
 execute if entity @s[tag=player6] run summon armor_stand ~ ~ ~ {NoGravity:true,Tags:["player6_body","player_body"]}
 execute if entity @s[tag=player6] run tp @e[tag=player6_body] @a[tag=player6,limit=1]
 
+forceload add ~ ~
 
 execute if entity @s[tag=player1] run tp @e[tag=room_placeholder_1, limit=1]
 execute if entity @s[tag=player2] run tp @e[tag=room_placeholder_2, limit=1]
