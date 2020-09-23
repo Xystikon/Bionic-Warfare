@@ -14,4 +14,4 @@ function bionic-warfare:items/loop
 # upgrade effects
 
 # currency and purchasing
-function bionic-warfare:main/currency/credits
+#function bionic-warfare:main/currency/credits
