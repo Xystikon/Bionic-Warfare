@@ -1,3 +1,10 @@
+execute if entity @s[tag=player1] run tp @e[tag=room_placeholder_1] @a[tag=player1,limit=1]
+execute if entity @s[tag=player2] run tp @e[tag=room_placeholder_2] @a[tag=player2,limit=1]
+execute if entity @s[tag=player3] run tp @e[tag=room_placeholder_3] @a[tag=player3,limit=1]
+execute if entity @s[tag=player4] run tp @e[tag=room_placeholder_4] @a[tag=player4,limit=1]
+execute if entity @s[tag=player5] run tp @e[tag=room_placeholder_5] @a[tag=player5,limit=1]
+execute if entity @s[tag=player6] run tp @e[tag=room_placeholder_6] @a[tag=player6,limit=1]
+
 execute if entity @s[tag=player1] run tp @e[tag=player1_placeholder, limit=1]
 execute if entity @s[tag=player2] run tp @e[tag=player2_placeholder, limit=1]
 execute if entity @s[tag=player3] run tp @e[tag=player3_placeholder, limit=1]

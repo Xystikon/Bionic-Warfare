@@ -11,11 +11,11 @@ execute if entity @s[tag=player5] run tp @e[tag=player5_placeholder] @a[tag=play
 execute if entity @s[tag=player6] run summon armor_stand ~ ~ ~ {NoGravity:1b,Tags:["player6_placeholder"]}
 execute if entity @s[tag=player6] run tp @e[tag=player6_placeholder] @a[tag=player6,limit=1]
 
-execute if entity @s[tag=player1] run tp @e[tag=room_marker_1, limit=1]
-execute if entity @s[tag=player2] run tp @e[tag=room_marker_2, limit=1]
-execute if entity @s[tag=player3] run tp @e[tag=room_marker_3, limit=1]
-execute if entity @s[tag=player4] run tp @e[tag=room_marker_4, limit=1]
-execute if entity @s[tag=player5] run tp @e[tag=room_marker_5, limit=1]
-execute if entity @s[tag=player6] run tp @e[tag=room_marker_6, limit=1]
+execute if entity @s[tag=player1] run tp @e[tag=room_placeholder_1, limit=1]
+execute if entity @s[tag=player2] run tp @e[tag=room_placeholder_2, limit=1]
+execute if entity @s[tag=player3] run tp @e[tag=room_placeholder_3, limit=1]
+execute if entity @s[tag=player4] run tp @e[tag=room_placeholder_4, limit=1]
+execute if entity @s[tag=player5] run tp @e[tag=room_placeholder_5, limit=1]
+execute if entity @s[tag=player6] run tp @e[tag=room_placeholder_6, limit=1]
 
 scoreboard players set @s timeInEngine 1
