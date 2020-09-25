@@ -15,7 +15,7 @@ execute if entity @e[tag=player4_placeholder] if entity @s[tag=player4] run tp @
 execute if entity @e[tag=player5_placeholder] if entity @s[tag=player5] run tp @e[tag=room_placeholder_5] @a[tag=player5,limit=1]
 execute if entity @e[tag=player6_placeholder] if entity @s[tag=player6] run tp @e[tag=room_placeholder_6] @a[tag=player6,limit=1]
 
-# save teleport back to placeholder
+# teleport back to placeholder
 execute if entity @e[tag=player1_placeholder] if entity @s[tag=player1] run tp @e[tag=player1_placeholder, limit=1]
 execute if entity @e[tag=player2_placeholder] if entity @s[tag=player2] run tp @e[tag=player2_placeholder, limit=1]
 execute if entity @e[tag=player3_placeholder] if entity @s[tag=player3] run tp @e[tag=player3_placeholder, limit=1]
@@ -30,6 +30,14 @@ execute if entity @e[tag=player3_placeholder] if entity @s[tag=player3] run kill
 execute if entity @e[tag=player4_placeholder] if entity @s[tag=player4] run kill @e[tag=player4_body]
 execute if entity @e[tag=player5_placeholder] if entity @s[tag=player5] run kill @e[tag=player5_body]
 execute if entity @e[tag=player6_placeholder] if entity @s[tag=player6] run kill @e[tag=player6_body]
+
+# kill armor stand item and armor stand's items if necessary
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:armor_stand",Count:1b}}]
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:netherite_boots",Count:1b}}]
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:netherite_leggings",Count:1b}}]
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:netherite_chestplate",Count:1b}}]
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:netherite_helmet",Count:1b}}]
+execute at @e[tag=player_placeholder] run kill @e[type=item,distance=..2.5,nbt={Item:{id:"minecraft:golden_chestplate",Count:1b}}]
 
 # remove player markers
 execute if entity @e[tag=player1_placeholder] if entity @s[tag=player1] run kill @e[tag=player1_placeholder]

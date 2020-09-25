@@ -41,6 +41,8 @@ scoreboard players set gameTime info 0
 scoreboard players set playerCount info 0
 
 scoreboard players set totalReactorTime info 10000
+scoreboard players set borderStartingSize info 1000
+scoreboard players set borderCloseTime info 1000
 
 # reactor bossbar
 bossbar add bw:has-reactor {"text":"No one has the reactor"}

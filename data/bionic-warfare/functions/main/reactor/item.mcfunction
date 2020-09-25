@@ -26,6 +26,4 @@ execute unless entity @a[tag=hasReactor] run bossbar set bw:has-reactor name {"t
 execute as @a if entity @s[tag=hasReactor] run effect give @s glowing 1 1 true
 execute as @a unless entity @s[tag=hasReactor] run effect clear @s glowing
 
-# clear all chestplates on the ground so no one can duplicate
-#kill @e[type=item,nbt={Item:{id:"minecraft:golden_chestplate",Count:1b}}]
-#kill @e[type=item,nbt={Item:{id:"minecraft:netherite_chestplate",Count:1b}}]
+execute as @a[tag=hasReactor] store result bossbar bw:has-reactor value run scoreboard players get @s timeWithReactor
