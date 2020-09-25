@@ -24,14 +24,23 @@ scoreboard objectives add deaths deathCount
 scoreboard players set @a deaths 0
 scoreboard objectives setdisplay list deaths
 
-scoreboard objectives add rightClick minecraft.used:minecraft.carrot_on_a_stick
-scoreboard players set @a rightClick 0
+scoreboard objectives remove numSpeed
+scoreboard objectives remove numJump
+scoreboard objectives remove numHealing
+scoreboard objectives remove numResistance
+
+scoreboard objectives add numSpeed dummy
+scoreboard objectives add numJump dummy
+scoreboard objectives add numHealing dummy
+scoreboard objectives add numResistance dummy
 
 # info
 scoreboard objectives add info dummy
 scoreboard players set gameRunning info 0
 scoreboard players set gameTime info 0
 scoreboard players set playerCount info 0
+
+scoreboard players set totalReactorTime info 10000
 
 # reactor bossbar
 bossbar add bw:has-reactor {"text":"No one has the reactor"}

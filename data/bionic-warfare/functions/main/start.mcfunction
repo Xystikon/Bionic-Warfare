@@ -1,3 +1,6 @@
+# redo scoreboards
+function bionic-warfare:init/init_scoreboards
+
 # start the start timer
 scoreboard players set timer startTimer 1
 
@@ -16,8 +19,9 @@ kill @e[tag=room_marker]
 kill @e[tag=room_placeholder]
 kill @e[tag=player_placeholder]
 kill @e[tag=player_body]
+kill @e[tag=upgradeBlock]
 
-# other functions
+# create rooms
 function bionic-warfare:main/room/create
 
 # reset start

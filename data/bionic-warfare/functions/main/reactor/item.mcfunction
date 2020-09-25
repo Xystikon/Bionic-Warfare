@@ -1,6 +1,7 @@
 # if a player died, remove the tag and the reactor
-execute as @a if score @s isDead matches 1.. run tag @s remove hasReactor
-execute as @a if score @s isDead matches 1.. run clear @s golden_chestplate
+execute as @a[tag=hasReactor] if score @s isDead matches 1.. at @s run summon item ~ ~ ~ {Item:{id:"minecraft:golden_chestplate",Count:1b,tag:{arcReactor:1}}}
+execute as @a[tag=hasReactor] if score @s isDead matches 1.. run clear @s golden_chestplate
+execute as @a[tag=hasReactor] if score @s isDead matches 1.. run tag @s remove hasReactor
 execute as @a if score @s isDead matches 1.. run scoreboard players set @s isDead 0
 
 # if a player has the arc reactor, tag them
@@ -11,7 +12,7 @@ clear @a golden_chestplate
 clear @a netherite_chestplate
 
 # if a player has reactor tag, give them the arc reactor and measure length of time they have it
-execute as @a[tag=hasReactor] run replaceitem entity @s armor.chest golden_chestplate{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],arcReactor:1} 1
+execute as @a[tag=hasReactor] run replaceitem entity @s armor.chest golden_chestplate{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],arcReactor:1,display:{Name:'{"text":"Reactor","color": "light_green","italic": false}'}} 1
 execute as @a[tag=hasReactor] run scoreboard players add @s timeWithReactor 1
 
 # if a player doesn't have the reactor taag, give them a normal chestplate
